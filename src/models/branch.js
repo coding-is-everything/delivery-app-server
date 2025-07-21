@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const brandSchema = new mongoose.Schema({
+const branchSchema = new mongoose.Schema({
     name: { type: String, required: true },
     location: {
         latitude: { type: Number },
@@ -15,6 +15,6 @@ const brandSchema = new mongoose.Schema({
     ],
 });
 
-const Branch = mongoose.model("Branch", Branch);
+const Branch = mongoose.model("Branch", branchSchema);
 
 export default Branch;
